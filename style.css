@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background:url("https://amymhaddad.s3.amazonaws.com/morocco-blue.png");
+    background-size: cover;
+   
+}
+.clock{
+    width: 100%;
+    max-width: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1),
+    0px 10px 20px rgba(0,0,0,0.7);
+    border-radius: 12px;
+    height: 24vh;
+    background: #6494a38f;
+}
+
+.clock h1{
+    font-size: 3.7rem;
+    color:whitesmoke;
+    text-shadow:1px 1px 10px rgba(0,0,0,0.1),0px 10px 20px rgba(0,0,0,0.7);
+}
+
+.clock span{
+    position: relative;
+    margin-left: 5px;
+    color: whitesmoke;
+    top: -10%;
+    font-weight: 700;
+    text-shadow:1px 1px 10px rgba(0,0,0,0.1),0px 10px 20px rgba(0,0,0,0.7);
+}
+@media screen and (max-width:400px) {
+    .clock h1 {
+        font-size: 2.5rem;
+        /* color:whitesmoke; */
+    }
+    .clock span{
+        font-weight: bold;
+        
+    }
+    .clock{
+        max-width: 240px;
+        
+    }
+}
